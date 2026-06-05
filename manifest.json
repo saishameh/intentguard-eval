@@ -1,0 +1,19 @@
+{
+  "name": "IntentGuard-Eval",
+  "version": "1.0.0",
+  "description": "Adversarial evaluator for smart home automation agents",
+  "endpoint": "/assess",
+  "health_endpoint": "/health",
+  "port": 8001,
+  "input_schema": {
+    "agent_url": "string",
+    "config": "object"
+  },
+  "output_schema": {
+    "pass_rate": "number",
+    "total_passed": "number",
+    "total_attacks": "number",
+    "category_breakdown": "object",
+    "results": "array"
+  }
+}
